@@ -1,0 +1,21 @@
+﻿<Window x:Name="mainMenu" x:Class="SchoolManagementPortal.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolManagementPortal"
+        mc:Ignorable="d"
+        Title="MainMenu" Height="488.333" Width="778.667">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3BA8A8" Offset="0.964"/>
+                <GradientStop Color="White"/>
+                <GradientStop Color="#FFB4B8DE"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="mainMenuAddUser" Content="Add User" HorizontalAlignment="Left" Margin="19,27,0,0" VerticalAlignment="Top" Width="144" Height="67" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Click="mainMenuAddUser_Click" FontSize="20"/>
+        <Button x:Name="mainMenuAddTeacher" Content="Add Teacher" HorizontalAlignment="Left" Margin="191,27,0,0" VerticalAlignment="Top" Width="138" Height="67" Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Click="mainMenuAddTeacher_Click" FontSize="20"/>
+        <Button x:Name="mainMenuAddStudent" Content="Add Student" HorizontalAlignment="Left" Margin="355,27,0,0" VerticalAlignment="Top" Width="151" Height="67" Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" FontSize="20"/>
+    </Grid>
+</Window>
